@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- live server는 post 방식을 지원안하는듯 -->
+        <!-- get의 action에 백엔드 서버의 url이 들어가게 된다-->
+        <form method="get" action="check.html">
+            <fieldset>
+                <legend>입력 양식</legend>
+                <table>
+                    <tr>
+                        <td><label for="name">이름</label></td>
+                        <td><input id="name" type="text" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="mail">이메일</label></td>
+                        <td><input id="mail" type="email" /></td>
+                    </tr>
+                </table>
+                <!-- http://127.0.0.1:5500/form_fieldset.html?name=test&email=test%40abc.com&submit=submit -->
+                <!--
+                http://127.0.0.1:5500/form_fieldset.html?name=%ED%95%9C%EA%B8%80&email=test%40abc.com&submit=submit
+                실제 통신에서는 한글을 ASCII로 변환되서 전달된다.
+                -->
+                <input type="submit" name="submit" value="submit" />
+            </fieldset>
+        </form>
+    </body>
+</html>
