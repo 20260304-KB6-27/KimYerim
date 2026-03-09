@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            .container {
+                margin-top: 50px;
+                margin-left: 50px;
+            }
+
+            /* 
+            postion fixed : 고정 레이아웃
+            
+            특징
+            - 스크롤을 내려도 화면의 특정 위치에 고정
+            - 일반적인 문서 흐름에서 제외되어 다른 요소들의 위치를 무시함
+            */
+            .top_bar {
+                background-color: red;
+                height: 50px;
+                top: 0;
+                left: 0;
+                right: 0;
+                position: fixed;
+            }
+
+            .left_bar {
+                background-color: blue;
+                width: 50px;
+                position: fixed;
+                top: 50px;
+                left: 0;
+                bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="top_bar"></div>
+        <div class="left_bar"></div>
+        <div class="container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tempore cumque quam nesciunt nobis assumenda in. Consectetur
+                atque aut ipsa? Iusto corporis alias harum blanditiis aliquid
+                modi culpa fugit ex id? Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. A consectetur aspernatur quam repellendus
+                alias nulla animi. Quisquam magnam, nemo enim, est nobis minima
+                asperiores repellat possimus nulla ex quaerat ea?
+            </p>
+
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                deleniti consequuntur obcaecati illo laborum, laboriosam error,
+                odio quos atque accusamus assumenda quisquam quis autem? Tempore
+                quasi optio ea mollitia a? Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Beatae saepe vitae, sapiente
+                reprehenderit aliquam minus, veniam repellat earum vel quod
+                natus, porro odio dolorum cupiditate velit laudantium placeat
+                fugit qui. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Vitae enim amet totam, natus tempore animi veniam expedita
+                necessitatibus quasi suscipit illo ipsam ut earum, corrupti at
+                fugit repellendus aliquid culpa.
+            </p>
+        </div>
+    </body>
+</html>
