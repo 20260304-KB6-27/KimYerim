@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script>
+            function callbackTimes(callback, times) {
+                for (let i = 0; i < times; i++) {
+                    callback();
+                }
+            }
+
+            let call = function () {
+                alert('함수 호출');
+            };
+
+            callbackTimes(call, 3);
+        </script>
+    </head>
+
+    <body></body>
+</html>
