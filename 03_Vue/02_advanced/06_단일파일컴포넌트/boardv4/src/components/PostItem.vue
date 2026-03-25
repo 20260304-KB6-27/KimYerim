@@ -41,8 +41,6 @@
 </template>
 
 <script setup>
-import { Update } from 'vite';
-
 const props = defineProps({
     post: Object,
     selectedPost: Object,
