@@ -5,6 +5,10 @@
     </div>
 </template>
 
-<script setup></script>
+<script setup>
+defineOptions({
+    name: 'MidwayTab',
+});
+</script>
 
 <style scoped></style>
