@@ -1,4 +1,4 @@
 package basic.ch07.sec07.exam01;
 
-public class A {
+public class B extends A{
 }
