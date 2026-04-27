@@ -1,0 +1,28 @@
+package basic.ch13.sec01;
+
+public class Application2 {
+    
+    // T가 Integer로만 타입 제한
+    public static <T extends Integer> Box<T> boxing(T content) {
+        Box<T> box = new Box<>();
+        box.setContent(content);
+        return box;
+    }
+
+    // 오버로딩
+    public static <T extends String> Box<T> boxing(T content) {
+        Box<T> box = new Box<>();
+        box.setContent(content);
+        return box;
+    }
+    
+    public static void main(String[] args) {
+        Box<Integer> box1 = boxing(100);
+        int intValue = box1.getContent();
+        System.out.println("intValue = " + intValue);
+        
+        Box<String> box2 = boxing("박스다");
+        String strValue = box2.getContent();
+        System.out.println("strValue = " + strValue);
+    }
+}
